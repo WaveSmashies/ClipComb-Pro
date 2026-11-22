@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.ini.example text eol=lf
+LICENSE text eol=lf
+*.png binary
+*.ico binary
+*.af binary

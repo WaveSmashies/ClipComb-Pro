@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+qa/
+vendor/
+player/
+bridge/
+cache/
+Generated Waveforms/
+Generated Thumbnails/
+Cleanup Work/
+scan-cache.sqlite3*
+*.ini
+!*.ini.example
+*.project.json
+.clip-review-save.json*
+*.writing
+*.exe
+*.dll
+*.zip
+*.7z
+*.peaks
+*.log
+*.mp4
+*.mkv
+*.mov
+*.ts
+*.wav
+.DS_Store
+Thumbs.db

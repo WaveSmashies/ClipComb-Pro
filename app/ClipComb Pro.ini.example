@@ -1,0 +1,225 @@
+[app]
+geometry = 1500x950
+last_project =
+auto_advance = yes
+autoplay = yes
+volume_meter = yes
+media_play_pause = no
+seek_small = 2
+seek_large = 5
+speed_reset_seconds = 3
+ui_refresh_ms = 16
+remember_position = yes
+undo_limit = 50
+window_state = normal
+frame_repeat_fps = 10
+projects_sort = Latest
+sort_moments = yes
+frame_repeat_delay_ms = 400
+timecode_frames = yes
+queue_view = List
+transport_scale = 1
+review_ui_version = 2
+cache_retention_version = 1
+review_controls_version = 2
+selection_delete_version = 1
+history_defaults_version = 2
+arrow_defaults_version = 2
+
+[tools]
+mpv_library =
+ffprobe =
+ffmpeg =
+hardware_decoding = auto
+resolve_folder =
+
+[export]
+fps = Auto (highest clip)
+mode = file
+skip_existing = yes
+apply_mix = yes
+timeline_name = ClipComb Pro selects
+format = OTIO · Resolve (clip markers)
+timeline_markers = no
+fix_bookmarks = yes
+dont_show_warning = no
+
+[bookmarks]
+palette = DaVinci Resolve
+custom_colors =
+
+[timeline]
+right_click_existing = yes
+
+[snapping]
+enabled = yes
+
+[tutorial]
+dont_show = no
+first_run_seen = no
+completed = no
+skipped = no
+
+[trimming]
+original_name = no
+replace_original = yes
+join_sections = yes
+
+[magnifier]
+zoom = 3
+step = 0.5
+maximum = 20
+width = 480
+height = 300
+refresh_ms = 4
+capture_ms = 16
+smoothing = yes
+mode = Automatic
+show_cursor = yes
+
+[scrubbing]
+show_video = yes
+play_audio = no
+stop_playback = yes
+seek_interval_ms = 16
+audio_grain_ms = 35
+
+[waveform]
+enabled = yes
+track = auto
+bins_per_second = 50
+cache_directory = Generated Waveforms
+delete_on_close = no
+delete_after_30_days = yes
+
+[layout]
+left = 0.26
+mixer = 0.79
+queue = 0.68
+viewer = 0.65
+
+[theme]
+preset = Default
+light_mode = no
+
+[archive]
+show_warning = yes
+start_on_launch = no
+
+[thumbnails]
+size = 170
+delete_on_close = no
+delete_after_30_days = yes
+
+[dual]
+enabled = no
+geometry =
+fullscreen = no
+primary_category = Unused
+panels = [{"category":"Used","mode":"List"},{"category":"Kept","mode":"List"},{"category":"Deleted","mode":"List"}]
+layout_version = 3
+
+[audio]
+output_device = auto
+date_profiles_enabled = no
+default_profile = Configured tracks
+layout_change = 2025-07-28T20:25:00
+configured_names = Track 1|Track 2|Track 3|Track 4|Track 5|Track 6
+configured_enabled = 1
+configured_volumes = 100,100,100,100,100,100
+modern_names = All tracks|My mic · processed|Discord|Game sound|My mic · raw|Track 6
+legacy_names = My mic · processed|Discord|Game sound|My mic · raw|Track 5|All tracks
+modern_enabled = 3,4,5
+legacy_enabled = 2,3,4
+modern_volumes = 100,100,100,100,100,100
+legacy_volumes = 100,100,100,100,100,100
+
+[shortcuts]
+marker = F
+star = G
+review_page = R
+compare_page = C
+trim_file = T
+create_trim = T
+snap_playhead = N
+undo = Ctrl+Z
+redo = Ctrl+Shift+Z
+save = Ctrl+S
+export = Ctrl+Shift+E
+play = Space
+back = Z
+forward = X
+back_large = Shift+Z
+forward_large = Shift+X
+used = W
+deleted = A
+previous = Q
+next = E
+kept = D
+unused = S
+remove_range = Tab
+clear_moments = Alt+X
+fullscreen = Escape
+frame_back = Left
+frame_forward = Right
+scrub_to_mouse = MouseMiddle
+scrub_video = V
+scrub_audio = Alt+S
+extra1 =
+extra2 =
+extra3 =
+extra4 =
+volume_meter = M
+slow = Shift+1
+fast = Shift+2
+speed_1 = 1
+speed_2 = 2
+speed_3 = 3
+speed_4 = 4
+speed_5 = 5
+
+[shortcuts_secondary]
+marker =
+star =
+review_page =
+compare_page =
+trim_file =
+create_trim =
+snap_playhead =
+undo =
+redo =
+save =
+export =
+play =
+back =
+forward =
+back_large =
+forward_large =
+used =
+deleted =
+previous =
+next =
+kept =
+unused =
+remove_range = Backspace
+clear_moments =
+fullscreen =
+frame_back =
+frame_forward =
+scrub_to_mouse =
+scrub_video =
+scrub_audio =
+extra1 =
+extra2 =
+extra3 =
+extra4 =
+volume_meter =
+slow =
+fast =
+speed_1 =
+speed_2 =
+speed_3 =
+speed_4 =
+speed_5 =
+
+[projects]

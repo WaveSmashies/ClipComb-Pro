@@ -1,0 +1,48 @@
+name: Windows checks and build
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+defaults:
+  run:
+    working-directory: app
+jobs:
+  test:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements.txt
+      - name: Use a canonical path for test temporary files
+        shell: pwsh
+        run: |
+          $testTemp = python -c "import os; from pathlib import Path; print(Path(os.environ['RUNNER_TEMP']).resolve())"
+          Add-Content $env:GITHUB_ENV "TEMP=$testTemp"
+          Add-Content $env:GITHUB_ENV "TMP=$testTemp"
+      - run: python -m unittest discover -s tests -p "test_*.py" -v
+  build:
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python tools/build_tutorial.py --output dist/tutorial-runtime
+      - run: python tools/build_release.py --tutorial-runtime dist/tutorial-runtime
+      - uses: actions/upload-artifact@v6
+        with:
+          name: ClipComb-Pro-Windows-candidate
+          path: |
+            app/dist/*.zip
+            app/dist/*SHA256SUMS.txt
+          if-no-files-found: error

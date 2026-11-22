@@ -1,0 +1,12 @@
+# Changelog
+
+## 1.0.0 — review input and export layout
+
+- Limit project overlap scans to managed folders. Keep Archive Tools scanning the selected archive.
+- Queue Play or Pause during scrubbing and apply it when the playhead is released.
+- Add speed buttons with 1×, Shift+click 0.25×, and Ctrl+click 0.1× steps.
+- Keep the current interface scale while moving a window between monitors, then apply the destination scale after release.
+- Pin bookmark tooltips above the timeline while hovering or dragging.
+- Keep short Review Queue grids at the top when scrolled.
+- Handle middle mouse button presses safely while scrubbing or recording a shortcut.
+- Size the export dialog to show its settings and folder choices on open. Keep scrolling available on smaller displays.
